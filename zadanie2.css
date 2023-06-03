@@ -1,0 +1,467 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin-bottom: 4rem;
+}
+/*height calc(100vh - 92px)*/
+div.uvod_obrazok_pozadie {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_2000,w_2000,c_fit,f_auto,q_auto:best/Homepage-Model-3-Desktop-LHD");
+  height: calc(100vh - 92px);
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+svg {
+  color: black;
+  width: 50%;
+  margin-left: 5%;
+}
+img.obrazok_slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 10px;
+  color: #808080;
+  position: sticky;
+  top: -1em;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 3;
+}
+/*uprava loga*/
+.brand-title {
+  font-size: 2.5rem;
+  margin: 0.5rem;
+  margin-left: 1%;
+  font-weight: bold;
+  z-index: 1;
+}
+/*uprava loga*/
+.brand-title a {
+  text-decoration: none;
+  color: #cc0000;
+  display: block;
+  z-index: 1;
+}
+/*logo v aktivnom stave*/
+.brand-title a:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+/*zoznam v riadku */
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  transition: 2s;
+  margin-right: 1em;
+  font-size: 1.2rem;
+  display: flex;
+  z-index: 1;
+}
+a {
+  text-decoration: none;
+}
+/*uprava zoznamu*/
+.navbar-links li {
+  list-style: none;
+  transition: 2s;
+  padding-right: 1em;
+  z-index: 1;
+}
+/*uprava zoznamu*/
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 1.1rem;
+  display: block;
+  z-index: 1;
+}
+/*upraba menu v hover stave*/
+.navbar-links a:hover {
+  color: white;
+  opacity: 1;
+  transform: scale(1.1);
+  transition: 1s;
+}
+/*uprava hamburgera*/
+.toggle-button {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+/*uprava hamburgera*/
+.toggle-button .bar {
+  height: 4px;
+  width: 100%;
+  background-color: #808080;
+  border-radius: 10px;
+}
+.tlacidlo_dom {
+  background-color: rgba(62, 62, 61, 0.4);
+  z-index: 0;
+  position: absolute;
+  left: 50%;
+  z-index: 999;
+  bottom: 0;
+  width: 30%;
+  transform: translate(-50%, -50%);
+  border: 3px solid black;
+  border-radius: 8px;
+}
+p.text_tlacidlo {
+  color: white;
+  font-family: arial;
+  font-size: 1.2em;
+  margin: auto;
+  padding: 0.5em;
+  z-index: 2;
+}
+button.tlacidlo_dom:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  transform: translate(-50%, -50%) translateZ(0);
+  border: 3px solid #bebcbc;
+  border-radius: 8px;
+  transition: 2s;
+}
+
+p.text_tlacidlo:hover {
+  color: black;
+  transition: 2s;
+}
+p.nazov_modely {
+  text-align: center;
+  font-family: Arial;
+  margin-top: 3rem;
+  font-size: 3rem;
+}
+div.text_slider {
+  color: black;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  position: absolute;
+  background: rgba(254, 254, 254, 1);
+  background: -moz-linear-gradient(
+    top,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(226, 226, 226, 1) 100%
+  );
+  background: -webkit -gradient(left top, left bottom, color -stop(0%, rgba(254, 254, 254, 1)), color-stop(100%, rgba(226, 226, 226, 1)));
+  background: -webkit-linear-gradient(
+    top,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(226, 226, 226, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(226, 226, 226, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(226, 226, 226, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(254, 254, 254, 1) 0%,
+    rgba(226, 226, 226, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e2e2e2', GradientType=0 );
+}
+
+h1 {
+  text-align: center;
+}
+div.prvy_obrazok {
+  margin-left: 5%;
+}
+
+/*nadpis kontakt*/
+h1.kontakt_nadpis {
+  font-weight: bold;
+  font-size: 3em;
+}
+/*nastavenie farby ikony*/
+i.ikona {
+  color: black;
+}
+/*Posun bunky*/
+div.bunka_kontakty {
+  margin-bottom: 6%;
+  margin-left: 6%;
+}
+/*podnadpis kontakty*/
+h2.kontakty_podnadpis {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 4%;
+  margin-bottom: 5%;
+}
+/*nastavenie formulara*/
+.formular_riadok {
+  padding: 1.3%;
+  background-color: #f0f2f0;
+  border: none;
+  margin-bottom: 3%;
+  font-size: 1.3em;
+}
+/*nastavenie formulara*/
+.formular_riadok:hover {
+  transform: scale(1.02);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+/*nastavenie tlacidla odoslat*/
+button.tlacidlo_odoslat {
+  background-color: black;
+  color: white;
+  padding: 3%;
+  text-align: center;
+  border: none;
+  font-size: 1.3em;
+}
+/*nastavenie tlacidla pri hover*/
+button:hover {
+  opacity: 80%;
+  transform: scale(1.1);
+  border-radius: 10px;
+  transition: 2s;
+}
+
+/*Podstraka o nas*/
+
+h1.nadpis_onas {
+  text-align: center;
+  margin-top: 4%;
+}
+div.obalovac_onas {
+  margin-top: 4%;
+  margin-left: 0;
+}
+img.obrazok_onas {
+  object-fit: cover;
+}
+img.mapka_onas {
+  margin: auto;
+  margin-top: 9em;
+  margin-bottom: 5%;
+}
+h1.sidlo_onas {
+  text-align: center;
+  margin-top: 4%;
+}
+
+@media (max-width: 1100px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    background-color: black;
+    opacity: 0.5;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    margin-left: 1%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+/*responsive dizajn pre max 500px*/
+/* @media (max-width: 500px) {
+    .navbar-links ul {
+        margin-left: 10%;
+    }
+}
+@media (max-width: 576px) {
+    button.tlacidlo_dom {
+    display: none;
+}
+div.pozadie_obrazok_slider {
+        height: 10vh;
+    }
+}
+@media (min-width: 576px) {
+    button.tlacidlo_dom {
+    margin:auto;
+    width: 15%;
+    margin-top: 45%;
+}
+}
+
+@media (max-width: 992px) {
+    button.tlacidlo_dom {
+    margin:auto;
+    width: 30%;
+    margin-top: 35vh;
+}
+}
+@media (min-width: 992px) {
+    button.tlacidlo_dom {
+    margin:auto;
+    width: 20%;
+    margin-top: 35vh;
+}
+
+}
+@media (min-width: 1400px) {
+    button.tlacidlo_dom {
+    margin:auto;
+    width: 15%;
+    margin-top: 36vh;
+}
+} */
+
+@media (max-width: 576px) {
+  button.tlacidlo_dom {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  button.tlacidlo_dom {
+    width: 20%;
+  }
+}
+@media (min-width: 1024px) {
+  button.tlacidlo_dom {
+    width: 15%;
+  }
+}
+
+@media (max-width: 1200px) {
+  div.text_onas {
+    margin: auto;
+  }
+  img.obrazok_onas {
+    margin: auto;
+    margin-top: 4em;
+  }
+  button.tlacidlo_odoslat {
+    margin-bottom: 5%;
+  }
+}
+@media (min-width: 1200px) {
+  div.text_onas {
+    margin: auto;
+  }
+  img.obrazok_onas {
+    margin: auto;
+    margin-top: 4em;
+  }
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-item {
+  width: 100%;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -9999;
+  padding: 55px;
+  background: white;
+}
+
+.cierny-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+.active {
+  display: block;
+}
+
+.zrusit-galeriu {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  font-size: 30px;
+  cursor: pointer;
+  color: darkgray;
+}
+
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .gallery-modal {
+    display: none;
+  }
+
+  .cierny-overlay {
+    background-color: transparent;
+    display: none;
+  }
+}
+
+.card {
+  height: 100%;
+}
