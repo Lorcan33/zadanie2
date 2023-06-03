@@ -437,7 +437,7 @@ div.pozadie_obrazok_slider {
 }
 .active {
   display: block;
-  z-index: 99999;
+  z-index: 999999;
 }
 
 .zrusit-galeriu {
