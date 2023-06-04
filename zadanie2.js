@@ -9,10 +9,10 @@ toggleButton.addEventListener("click", () => {
 });
 
 const galleryImages = [
-  "obrazky/Model-3.jpg",
-  "obrazky/Model-S.avif",
-  "obrazky/Model-X.avif",
-  "obrazky/Model-Y.webp",
+  "obrazky/tesla1.jfif",
+  "obrazky/tesla2_galeria.jpg",
+  "obrazky/tesla3_galeria.jpg",
+  "obrazky/tesla4_galeria.webp",
 ];
 
 const closeGallery = () => {
