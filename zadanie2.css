@@ -216,7 +216,7 @@ i.ikona {
 /*Posun bunky*/
 div.bunka_kontakty {
   margin-bottom: 6%;
-  margin-left: 6%;
+  flex-shrink: unset;
 }
 /*podnadpis kontakty*/
 h2.kontakty_podnadpis {
