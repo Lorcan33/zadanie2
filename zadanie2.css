@@ -213,6 +213,11 @@ h1.kontakt_nadpis {
 i.ikona {
   color: black;
 }
+.obalovac_bunky {
+  display:flex;
+   justify-content: center;
+ }
+
 /*Posun bunky*/
 div.bunka_kontakty {
   margin-bottom: 6%;
@@ -312,6 +317,11 @@ h1.sidlo_onas {
 
   .navbar-links.active {
     display: flex;
+  }
+}
+@media (max-width: 1024px) {
+  .obalovac_bunky {
+      flex-direction: column;
   }
 }
 
