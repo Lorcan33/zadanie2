@@ -222,6 +222,7 @@ i.ikona {
 div.bunka_kontakty {
   margin-bottom: 6%;
   flex-shrink: unset;
+  margin-left: -2%;
 }
 /*podnadpis kontakty*/
 h2.kontakty_podnadpis {
