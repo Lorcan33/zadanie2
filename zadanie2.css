@@ -41,7 +41,7 @@ img.obrazok_slider {
   top: -1em;
   background-color: black;
   opacity: 0.5;
-  z-index: 3;
+  z-index: 999999;
 }
 /*uprava loga*/
 .brand-title {
